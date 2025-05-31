@@ -1,0 +1,48 @@
+<div class="container">
+  <h1> 💌 Kiss Delivery Tracker 💌</h1>
+  <p class="subtitle">Because even theoretical air mail needs to be tracked by the U.S. Postal Service</p>
+  
+  <div class="number">
+    <p class="sentence-with-input">
+      This is the 
+      <input type="number" value="1" id="kiss-count"class="inline-input" readonly> 
+      kiss to be sent.
+    </p>
+  </div>
+  <div class="tracking-info">
+    <label>
+      Origin:
+      <input type="text" value="Milford, Massachusetts" readonly>
+    </label>
+    <label>
+      Current Location:
+      <input type="text" value="In transit">
+    </label>
+    <label>
+      Destination:
+      <input type="text" value="Nathan Pires">
+    </label>
+  </div>
+
+  <!-- Checkbox outside label -->
+  <input type="checkbox" id="arrival-checkbox" hidden>
+
+  <!-- Label for checkbox -->
+  <label class="status" for="arrival-checkbox">
+    <span class="custom-checkbox"></span>
+    Please check to acknowledge the arrival of your delivery
+  </label>
+  <label class="warning">
+    <p>You MUST check the box above in order to recieve your package.</p>
+  </label>
+  <p class="progress-label">Travel Progress:</p>
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+  
+  <!-- Message that shows if checkbox is checked -->
+  <div class="arrival-message">
+    ❤️💋The kiss has reached its destination!💋❤️
+    
+  </div>
+</div>
